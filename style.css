@@ -7,6 +7,7 @@ Author: HackerYou
 Author URI: http://hackeryou.com
 */
 /* ============================================================================= Grid, Reset and Default Styling ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|Oswald:400,300);
 /* line 43, css/_grid.scss */
 body { width: 100%; *zoom: 1; }
 /* line 28, css/_grid.scss */
@@ -141,59 +142,75 @@ img.alignright { padding-left: 5px; }
 /* line 24, css/_reset.scss */
 .clear { width: 100%; float: left; clear: both; }
 
-/* line 1, css/_default.scss */
-body { color: #333; }
+/* line 15, css/_default.scss */
+body { color: #333; font-family: "Arvo", serif; font-size: 22px; font-weight: 400; }
 
-/* line 5, css/_default.scss */
-.container { max-width: 1200px; margin: 0 auto; }
-
-/* line 10, css/_default.scss */
-.content { float: left; width: 65%; margin-right: 5%; }
-
-/* line 17, css/_default.scss */
-.full { width: 100%; }
-
-/* links */
 /* line 22, css/_default.scss */
-a { color: #BA209B; text-decoration: none; }
+img.logo { width: 25%; padding: 2%; }
 
-/* line 27, css/_default.scss */
-a:hover { color: #D424B1; }
+/* line 29, css/_default.scss */
+h1, h2, h3, h4, h5 { font-family: "Oswald", sans-serif; margin: 30.8px 0; text-transform: uppercase; letter-spacing: 5px; }
 
-/* paragraphs */
-/* line 32, css/_default.scss */
-p { line-height: 1.5; }
-
-/*blockquotes*/
-/* line 37, css/_default.scss */
-blockquote { background: #F7F7F7; margin: 0; padding: 20px; }
+/* line 36, css/_default.scss */
+p { line-height: 35.2px; margin: 30.8px 0; font-size: 13.2px; }
 
 /* line 42, css/_default.scss */
-blockquote p { margin-top: 0; }
+small { font-size: 11px; }
 
-/*tables*/
-/* line 47, css/_default.scss */
-table td { padding: 10px; }
+/* line 46, css/_default.scss */
+strong { font-weight: 600; }
 
 /* line 50, css/_default.scss */
-table tr td:first { padding-right: 0; }
+a { color: #6AC9CD; }
+/* line 52, css/_default.scss */
+a:hover { color: #0e292a; }
 
-/*def lists*/
-/* line 55, css/_default.scss */
-dt { font-weight: 600; padding-bottom: 5px; }
+/* line 57, css/_default.scss */
+header nav { width: 100%; padding: 5px 10px; background: #3A3736; color: #efefef; }
 
-/* line 59, css/_default.scss */
-dd { padding: 10px; margin-left: 10px; }
-
-/*lists*/
 /* line 65, css/_default.scss */
-ul li, ol li { padding: 3px; }
+form .form-element { margin: 15px 0; }
+/* line 67, css/_default.scss */
+form .form-element label { display: block; margin-bottom: 8.8px; font-weight: 400; font-size: 17.6px; }
+/* line 73, css/_default.scss */
+form .form-element input { width: 100%; padding: 10px; }
+/* line 77, css/_default.scss */
+form .form-element .radio { width: 100%; }
+/* line 79, css/_default.scss */
+form .form-element .radio label { display: inline-block; }
+/* line 81, css/_default.scss */
+form .form-element .radio label input[type="radio"] { width: auto; }
 
-/*PRE*/
-/* line 71, css/_default.scss */
-pre { background: #F7F7F7; padding: 10px; border-radius: 4px; border: 1px solid #ccc; }
+/* line 104, css/_default.scss */
+button.button-default { padding: 10px 25px; background: #6AC9CD; border: 0; border-radius: 8px; color: #fff; font-size: 17.6px; font-family: 'Oswald', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+/* line 99, css/_default.scss */
+button.button-default:hover { background: #44bbc0; }
 
-/* ============================================================================= Sidebar and Footer ========================================================================== */
+/* line 108, css/_default.scss */
+button.button-success { padding: 10px 25px; background: #F36C36; border: 0; border-radius: 8px; color: #fff; font-size: 17.6px; font-family: 'Oswald', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+/* line 99, css/_default.scss */
+button.button-success:hover { background: #e84c0e; }
+
+/* line 112, css/_default.scss */
+button.button-error { padding: 10px 25px; background: #C1272D; border: 0; border-radius: 8px; color: #fff; font-size: 17.6px; font-family: 'Oswald', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+/* line 99, css/_default.scss */
+button.button-error:hover { background: #971e23; }
+
+/* line 116, css/_default.scss */
+.third { width: 33.33%; padding: 2%; float: left; }
+
+/* line 122, css/_default.scss */
+.half { width: 50%; padding: 2%; float: left; }
+
+@keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+/* ============================================================================= Header, Sidebar and Footer ========================================================================== */
+/* line 1, css/_header.scss */
+header { background-image: url("img/bike.jpg"); height: 500px; }
+
+/* line 6, css/_header.scss */
+header h1 { margin-top: 0; }
+
 /* line 1, css/_sidebar.scss */
 .sidebar { width: 30%; float: left; }
 
@@ -208,12 +225,15 @@ footer { clear: both; }
 
 /* ============================================================================= Navigation ========================================================================== */
 /* line 1, css/_navigation.scss */
-ul.menu { margin: 0; padding: 0; }
+#nav { float: right; }
 
 /* line 5, css/_navigation.scss */
+ul.menu { margin: 0; padding: 0; }
+
+/* line 9, css/_navigation.scss */
 ul.menu li { display: inline; margin-right: 10px; }
 
-/* line 10, css/_navigation.scss */
+/* line 14, css/_navigation.scss */
 ul.menu li a { color: #333; padding: 10px; background: #333; color: white; }
 
 /* ============================================================================= Comment Styling ========================================================================== */
