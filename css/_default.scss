@@ -1,76 +1,132 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|Oswald:400,300);
+
+$baseFont: 'Arvo', serif;
+$headingsFont: 'Oswald', sans-serif;
+$fontSize: 22px;
+$fontWeight: 400;
+$fontColour: #333;
+$inverseColour: #efefef;
+
+$primaryColour: #6AC9CD;
+$successColour: #F36C36;
+$errorColour: #C1272D;
+$sectionColour: #3A3736;
+
 body {
-  color:#333;
+  color: $fontColour;
+  font-family: $baseFont;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
 }
 
-.container {
-  max-width:1200px;
-  margin:0 auto;
+img.logo {
+  width: 25%;
+  padding: 2%;
 }
 
-.content {
-  float:left;
-  width:65%;
-  margin-right: 5%;
 
+
+h1,h2,h3,h4,h5 {
+  font-family: $headingsFont;
+  margin: $fontSize*1.4 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
-.full {
-  width:100%;
-}
-
-/* links */
-a {
-  color:#BA209B;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #D424B1;
-}
-
-/* paragraphs */
 p {
-  line-height: 1.5;
+  line-height: $fontSize*1.6;
+  margin: $fontSize*1.4 0;
+  font-size: $fontSize*0.6;
 }
 
-/*blockquotes*/
-blockquote {
-  background: #F7F7F7;
-  margin:0;
-  padding:20px;
-}
-  blockquote p {
-    margin-top: 0;
-  }
-
-/*tables*/
-table td {
-  padding:10px;
-}
-table tr td:first {
-  padding-right: 0;
+small {
+  font-size: $fontSize*0.5;
 }
 
-/*def lists*/
-dt {
+strong {
   font-weight: 600;
-  padding-bottom: 5px;
-}
-dd {
-  padding:10px;
-  margin-left: 10px;
 }
 
-/*lists*/
-ul li,ol li {
-  padding:3px;
+a {
+  color: $primaryColour;
+  &:hover {
+    color: darken($primaryColour, 50%);
+  }
 }
 
-/*PRE*/
+header nav {
+  width: 100%;
+  padding: 5px 10px;
+  background: $sectionColour;
+  color: $inverseColour;
+}
 
-pre {
-  background: #F7F7F7;
-  padding:10px;
-  border-radius: 4px;
-  border:1px solid #ccc;
+form {
+  .form-element {
+    margin: 15px 0;
+    label {
+      display:block;
+      margin-bottom: $fontSize * 0.4;
+      font-weight: 400;
+      font-size: $fontSize * 0.8;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+    }
+    .radio {
+      width: 100%;
+      label {
+        display: inline-block;
+        input[type="radio"] {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@mixin button($colour) {
+  padding: 10px 25px;
+  background: $colour;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-size: $fontSize*0.8; 
+  font-family: 'Oswald', Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  &:hover {
+    background: darken($colour, 10%);
+  }
+}
+
+button.button-default {
+  @include button($primaryColour);
+}
+
+button.button-success {
+  @include button($successColour);
+}
+
+button.button-error {
+  @include button($errorColour);
+}
+
+.third {
+  width: 33.33%;
+  padding: 2%;
+  float: left;
+}
+
+.half {
+  width: 50%;
+  padding: 2%;
+  float: left;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

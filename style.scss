@@ -17,9 +17,10 @@ Author URI: http://hackeryou.com
 @import "css/default";
 
 /* =============================================================================
-                   Sidebar and Footer
+                   Header, Sidebar and Footer
    ========================================================================== */
 
+@import "css/header";
 @import "css/sidebar";
 @import "css/footer";
 
@@ -35,3 +36,4 @@ Author URI: http://hackeryou.com
    ========================================================================== */
 
 @import "css/comments";
+

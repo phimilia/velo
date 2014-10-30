@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
+  <div class="container clearfix">
     <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
@@ -25,8 +25,10 @@
     </h1>
 
     <?php wp_nav_menu( array(
-      'container' => false,
-      'menu' => 'header'
+      'container' => 'nav',
+      'container_id' => 'nav',
+      'menu' => 'header',
+      'theme_location' => 'primary'
     )); ?>
   </div> <!-- /.container -->
 </header><!--/.header-->
