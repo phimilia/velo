@@ -19,8 +19,8 @@
 <header>
   <div class="container clearfix">
     <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
+      <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> 
+        <img class="navlogo" src="wp-content/themes/velo/img/VELO.png" alt="<?php bloginfo( 'name' ); ?>">
       </a>
     </h1>
 
