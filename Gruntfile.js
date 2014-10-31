@@ -29,9 +29,10 @@
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-notify');
 
 	// Default task(s).
-	grunt.registerTask('default', ['sass', 'watch']);
+	grunt.registerTask('default', ['sass', 'watch', 'notify']);
 
  };
 

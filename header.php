@@ -12,14 +12,6 @@
   <?php wp_head(); ?>
 </head>
 
-
-<body <?php body_class(); ?>>
-
-  <?php if (is_home()) {
-    
-  }
-  ?>
-
 <header>
   <div class="container clearfix">
     <h1>
