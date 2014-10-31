@@ -367,7 +367,10 @@ header h1 {
 }
 
 .sidebar {
-  width: 30%;
+  display: inline;
+  float: left;
+  width: 22.91667%;
+  margin: 0 1.04167%;
   float: left;
 }
 
@@ -382,10 +385,15 @@ header h1 {
 
 footer {
   clear: both;
+  background: #FFF;
+}
+
+footer p {
+  margin: 0;
 }
 
 /* =============================================================================
-                   Navigation
+                   Navigation and Content
    ========================================================================== */
 #nav {
   position: absolute;
@@ -416,6 +424,14 @@ ul.menu li a {
 
 ul.menu li a:hover {
   color: #6ac9cd;
+}
+
+.content {
+  display: inline;
+  float: left;
+  width: 72.91667%;
+  margin: 0 1.04167%;
+  float: left;
 }
 
 /* =============================================================================

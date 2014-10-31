@@ -9,12 +9,16 @@
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
   <?php wp_head(); ?>
 </head>
 
 
 <body <?php body_class(); ?>>
+
+  <?php if (is_home()) {
+    
+  }
+  ?>
 
 <header>
   <div class="container clearfix">
