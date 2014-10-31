@@ -212,7 +212,7 @@ header { background-image: url("img/bike.jpg"); height: 500px; }
 header h1 { margin-top: 0; }
 
 /* line 1, css/_sidebar.scss */
-.sidebar { width: 30%; float: left; }
+.sidebar { display: inline; float: left; width: 22.91667%; margin: 0 1.04167%; float: left; }
 
 /* line 5, css/_sidebar.scss */
 .sidebar ul { margin: 0; padding: 0; }
@@ -221,9 +221,12 @@ header h1 { margin-top: 0; }
 .sidebar ul li { list-style: none; }
 
 /* line 1, css/_footer.scss */
-footer { clear: both; }
+footer { clear: both; background: #FFF; }
 
-/* ============================================================================= Navigation ========================================================================== */
+/* line 6, css/_footer.scss */
+footer p { margin: 0; }
+
+/* ============================================================================= Navigation and Content ========================================================================== */
 /* line 1, css/_navigation.scss */
 #nav { float: right; }
 
@@ -235,6 +238,9 @@ ul.menu li { display: inline; margin-right: 10px; }
 
 /* line 14, css/_navigation.scss */
 ul.menu li a { color: #333; padding: 10px; background: #333; color: white; }
+
+/* line 1, css/_content.scss */
+.content { display: inline; float: left; width: 72.91667%; margin: 0 1.04167%; float: left; }
 
 /* ============================================================================= Comment Styling ========================================================================== */
 /* line 1, css/_comments.scss */

@@ -159,8 +159,8 @@ function hackeryou_widgets_init() {
 		'name' => 'Primary Widget Area',
 		'id' => 'primary-widget-area',
 		'description' => 'The primary widget area',
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
+		'before_widget' => '<section>',
+		'after_widget' => '</section>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
