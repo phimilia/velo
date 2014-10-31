@@ -6,373 +6,657 @@ Version: 1.0
 Author: HackerYou
 Author URI: http://hackeryou.com
 */
-/* ============================================================================= Grid, Reset and Default Styling ========================================================================== */
+/* =============================================================================
+                   Grid, Reset and Default Styling
+   ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic|Oswald:400,300);
-/* line 43, css/_grid.scss */
-body { width: 100%; *zoom: 1; }
-/* line 28, css/_grid.scss */
-body:before, body:after { content: ""; display: table; }
-/* line 33, css/_grid.scss */
-body:after { clear: both; }
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
 
-/* line 1, css/_reset.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
 
-/* line 1, css/_reset.scss */
-audio, canvas, video { display: inline-block; }
+audio, canvas, video {
+  display: inline-block;
+}
 
-/* line 1, css/_reset.scss */
-audio:not([controls]) { display: none; height: 0; }
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
 
-/* line 1, css/_reset.scss */
-[hidden] { display: none; }
+[hidden] {
+  display: none;
+}
 
-/* line 1, css/_reset.scss */
-html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
-/* line 1, css/_reset.scss */
-a:focus { outline: thin dotted; }
+a:focus {
+  outline: thin dotted;
+}
 
-/* line 1, css/_reset.scss */
-a:active, a:hover { outline: 0; }
+a:active, a:hover {
+  outline: 0;
+}
 
-/* line 1, css/_reset.scss */
-h1 { font-size: 2em; }
+h1 {
+  font-size: 2em;
+}
 
-/* line 1, css/_reset.scss */
-abbr[title] { border-bottom: 1px dotted; }
+abbr[title] {
+  border-bottom: 1px dotted;
+}
 
-/* line 1, css/_reset.scss */
-b, strong { font-weight: 700; }
+b, strong {
+  font-weight: 700;
+}
 
-/* line 1, css/_reset.scss */
-dfn { font-style: italic; }
+dfn {
+  font-style: italic;
+}
 
-/* line 1, css/_reset.scss */
-mark { background: #ff0; color: #000; }
+mark {
+  background: #ff0;
+  color: #000;
+}
 
-/* line 1, css/_reset.scss */
-code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
 
-/* line 1, css/_reset.scss */
-pre { white-space: pre-wrap; word-wrap: break-word; }
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 
-/* line 1, css/_reset.scss */
-q { quotes: \201C \201D \2018 \2019; }
+q {
+  quotes: \201C \201D \2018 \2019;
+}
 
-/* line 1, css/_reset.scss */
-small { font-size: 80%; }
+small {
+  font-size: 80%;
+}
 
-/* line 1, css/_reset.scss */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
 
-/* line 1, css/_reset.scss */
-sup { top: -.5em; }
+sup {
+  top: -.5em;
+}
 
-/* line 1, css/_reset.scss */
-sub { bottom: -.25em; }
+sub {
+  bottom: -.25em;
+}
 
-/* line 1, css/_reset.scss */
-img { border: 0; }
+img {
+  border: 0;
+}
 
-/* line 1, css/_reset.scss */
-svg:not(:root) { overflow: hidden; }
+svg:not(:root) {
+  overflow: hidden;
+}
 
-/* line 1, css/_reset.scss */
-fieldset { border: 1px solid silver; margin: 0 2px; padding: .35em .625em .75em; }
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
 
-/* line 1, css/_reset.scss */
-button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
 
-/* line 1, css/_reset.scss */
-button, input { line-height: normal; }
+button, input {
+  line-height: normal;
+}
 
-/* line 1, css/_reset.scss */
-button, html input[type=button], input[type=reset], input[type=submit] { -webkit-appearance: button; cursor: pointer; }
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
 
-/* line 2, css/_reset.scss */
-button[disabled], input[disabled] { cursor: default; }
+button[disabled], input[disabled] {
+  cursor: default;
+}
 
-/* line 2, css/_reset.scss */
-input[type=checkbox], input[type=radio] { box-sizing: border-box; padding: 0; }
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
 
-/* line 2, css/_reset.scss */
-input[type=search] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
 
-/* line 2, css/_reset.scss */
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
-/* line 2, css/_reset.scss */
-textarea { overflow: auto; vertical-align: top; }
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
 
-/* line 2, css/_reset.scss */
-table { border-collapse: collapse; border-spacing: 0; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-/* line 2, css/_reset.scss */
-body, figure { margin: 0; }
+body, figure {
+  margin: 0;
+}
 
-/* line 2, css/_reset.scss */
-legend, button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
 
-/* line 4, css/_reset.scss */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-/* line 6, css/_reset.scss */
-.clearfix:after { content: " "; visibility: hidden; display: block; height: 0; clear: both; }
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
 
-/* line 14, css/_reset.scss */
-img { max-width: 100%; }
+img {
+  max-width: 100%;
+}
 
 /* Global Classes / Wordpress Specific */
-/* line 19, css/_reset.scss */
-.aligncenter { text-align: center; margin: 0 auto; }
-
-/* line 20, css/_reset.scss */
-.alignleft { float: left; }
-
-/* line 21, css/_reset.scss */
-.alignright { float: right; }
-
-/* line 22, css/_reset.scss */
-img.alignleft { padding-right: 5px; }
-
-/* line 23, css/_reset.scss */
-img.alignright { padding-left: 5px; }
-
-/* line 24, css/_reset.scss */
-.clear { width: 100%; float: left; clear: both; }
-
-/* line 15, css/_default.scss */
-body { color: #333; font-family: "Arvo", serif; font-size: 22px; font-weight: 400; }
-
-/* line 22, css/_default.scss */
-img.logo { width: 25%; padding: 2%; }
-
-/* line 29, css/_default.scss */
-h1, h2, h3, h4, h5 { font-family: "Oswald", sans-serif; margin: 30.8px 0; text-transform: uppercase; letter-spacing: 5px; }
-
-/* line 36, css/_default.scss */
-p { line-height: 35.2px; margin: 30.8px 0; font-size: 13.2px; }
-
-/* line 42, css/_default.scss */
-small { font-size: 11px; }
-
-/* line 46, css/_default.scss */
-strong { font-weight: 600; }
-
-/* line 50, css/_default.scss */
-a { color: #6AC9CD; }
-/* line 52, css/_default.scss */
-a:hover { color: #0e292a; }
-
-/* line 57, css/_default.scss */
-header nav { width: 100%; padding: 5px 10px; background: #3A3736; color: #efefef; }
-
-/* line 65, css/_default.scss */
-form .form-element { margin: 15px 0; }
-/* line 67, css/_default.scss */
-form .form-element label { display: block; margin-bottom: 8.8px; font-weight: 400; font-size: 17.6px; }
-/* line 73, css/_default.scss */
-form .form-element input { width: 100%; padding: 10px; }
-/* line 77, css/_default.scss */
-form .form-element .radio { width: 100%; }
-/* line 79, css/_default.scss */
-form .form-element .radio label { display: inline-block; }
-/* line 81, css/_default.scss */
-form .form-element .radio label input[type="radio"] { width: auto; }
-
-/* line 104, css/_default.scss */
-button.button-default { padding: 10px 25px; background: #6AC9CD; border: 0; border-radius: 8px; color: #fff; font-size: 17.6px; font-family: 'Oswald', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; }
-/* line 99, css/_default.scss */
-button.button-default:hover { background: #44bbc0; }
-
-/* line 108, css/_default.scss */
-button.button-success { padding: 10px 25px; background: #F36C36; border: 0; border-radius: 8px; color: #fff; font-size: 17.6px; font-family: 'Oswald', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; }
-/* line 99, css/_default.scss */
-button.button-success:hover { background: #e84c0e; }
-
-/* line 112, css/_default.scss */
-button.button-error { padding: 10px 25px; background: #C1272D; border: 0; border-radius: 8px; color: #fff; font-size: 17.6px; font-family: 'Oswald', Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; }
-/* line 99, css/_default.scss */
-button.button-error:hover { background: #971e23; }
-
-/* line 116, css/_default.scss */
-.third { width: 33.33%; padding: 2%; float: left; }
-
-/* line 122, css/_default.scss */
-.half { width: 50%; padding: 2%; float: left; }
-
-@keyframes fadein { from { opacity: 0; }
-  to { opacity: 1; } }
-/* ============================================================================= Header, Sidebar and Footer ========================================================================== */
-/* line 1, css/_header.scss */
-header { background-image: url("img/bike.jpg"); height: 500px; }
-
-/* line 6, css/_header.scss */
-header h1 { margin-top: 0; }
-
-/* line 1, css/_sidebar.scss */
-.sidebar { display: inline; float: left; width: 22.91667%; margin: 0 1.04167%; float: left; }
-
-/* line 5, css/_sidebar.scss */
-.sidebar ul { margin: 0; padding: 0; }
-
-/* line 9, css/_sidebar.scss */
-.sidebar ul li { list-style: none; }
-
-/* line 1, css/_footer.scss */
-footer { clear: both; background: #FFF; }
-
-/* line 6, css/_footer.scss */
-footer p { margin: 0; }
-
-/* ============================================================================= Navigation and Content ========================================================================== */
-/* line 1, css/_navigation.scss */
-#nav { float: right; }
-
-/* line 5, css/_navigation.scss */
-ul.menu { margin: 0; padding: 0; }
-
-/* line 9, css/_navigation.scss */
-ul.menu li { display: inline; margin-right: 10px; }
-
-/* line 14, css/_navigation.scss */
-ul.menu li a { color: #333; padding: 10px; background: #333; color: white; }
-
-/* line 1, css/_content.scss */
-.content { display: inline; float: left; width: 72.91667%; margin: 0 1.04167%; float: left; }
-
-/* ============================================================================= Comment Styling ========================================================================== */
-/* line 1, css/_comments.scss */
-#comments .navigation { padding: 0 0 18px; }
-
-/* line 2, css/_comments.scss */
-h3#comments-title, h3#reply-title { color: #000000; font-weight: 700; font-size: 20px; margin-bottom: 0; }
-
-/* line 8, css/_comments.scss */
-h3#comments-title { padding: 24px 0; }
-
-/* line 9, css/_comments.scss */
-.commentlist li.comment { border-bottom: 1px solid #e7e7e7; line-height: 24px; position: relative; clear: both; margin: 0 0 24px; padding: 0 0 0 56px; }
-
-/* line 17, css/_comments.scss */
-.commentlist li:last-child { border-bottom: none; margin-bottom: 0; }
-
-/* line 21, css/_comments.scss */
-#comments .comment-body ul, #comments .comment-body ol { margin-bottom: 18px; }
-
-/* line 22, css/_comments.scss */
-#comments .comment-body p:last-child { margin-bottom: 6px; }
-
-/* line 23, css/_comments.scss */
-#comments .comment-body blockquote p:last-child { margin-bottom: 24px; }
-
-/* line 24, css/_comments.scss */
-.commentlist ol { list-style: decimal; }
-
-/* line 25, css/_comments.scss */
-.commentlist .avatar { position: absolute; top: 4px; left: 0; }
-
-/* line 30, css/_comments.scss */
-.comment-author cite { color: #000000; font-style: normal; font-weight: 700; }
-
-/* line 35, css/_comments.scss */
-.comment-author .says { font-style: italic; }
-
-/* line 36, css/_comments.scss */
-.comment-meta { font-size: 12px; margin: 0 0 5px; }
-
-/* line 40, css/_comments.scss */
-.comment-meta a:link, .comment-meta a:visited { color: #888888; text-decoration: none; }
-
-/* line 44, css/_comments.scss */
-.reply { font-size: 12px; padding: 0 0 24px; }
-
-/* line 48, css/_comments.scss */
-.reply a, a.comment-edit-link { color: #888888; }
-
-/* line 49, css/_comments.scss */
-.commentlist .children li { border: none; margin: 0; }
-
-/* line 53, css/_comments.scss */
-#comments .pingback { margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px solid #e7e7e7; }
-
-/* line 58, css/_comments.scss */
-.commentlist li.comment + li.pingback { margin-top: -6px; }
-
-/* line 59, css/_comments.scss */
-#comments .pingback p { color: #888888; font-size: 12px; line-height: 18px; display: block; margin: 0; }
-
-/* line 66, css/_comments.scss */
-#comments .pingback .url { font-style: italic; font-size: 13px; }
-
-/* line 70, css/_comments.scss */
-input[type=submit] { color: #333333; }
-
-/* line 71, css/_comments.scss */
-#respond { margin-top: 24px; border-top: 1px solid #e7e7e7; overflow: hidden; position: relative; }
-
-/* line 77, css/_comments.scss */
-#respond .comment-notes { margin-bottom: 1em; }
-
-/* line 78, css/_comments.scss */
-.form-allowed-tags { line-height: 1em; }
-
-/* line 79, css/_comments.scss */
-.children #respond { margin: 0 48px 0 0; }
-
-/* line 80, css/_comments.scss */
-h3#reply-title { margin: 18px 0; }
-
-/* line 81, css/_comments.scss */
-#comments-list #respond { margin: 0 0 18px; }
-
-/* line 82, css/_comments.scss */
-#cancel-comment-reply-link { font-size: 12px; line-height: 18px; font-weight: 400; }
-
-/* line 87, css/_comments.scss */
-#respond .required { color: #ff4b33; font-weight: 700; }
-
-/* line 91, css/_comments.scss */
-#respond label { color: #888888; font-size: 12px; }
-
-/* line 95, css/_comments.scss */
-#respond input { width: 98%; margin: 0 0 9px; }
-
-/* line 99, css/_comments.scss */
-#respond textarea { width: 98%; }
-
-/* line 100, css/_comments.scss */
-#respond dt, #respond dd { color: #888888; font-size: 12px; line-height: 18px; }
-
-/* line 105, css/_comments.scss */
-#respond dd code { font-size: 11px; }
-
-/* line 106, css/_comments.scss */
-#respond .form-submit { margin: 0 0 24px; }
-
-/* line 107, css/_comments.scss */
-#respond .form-submit input { width: auto; font-size: 14px; }
-
-/* line 111, css/_comments.scss */
-#respond dl { margin: 0 0 10px; }
-
-/* line 112, css/_comments.scss */
-#respond dt { display: inline; font-weight: 400; }
-
-/* line 116, css/_comments.scss */
-#respond dd { display: inline; }
-
-/* line 117, css/_comments.scss */
-p.form-allowed-tags, .nocomments { display: none; }
-
-/* line 118, css/_comments.scss */
-.commentlist, .commentlist .children { list-style: none; margin: 0; }
-
-/* line 122, css/_comments.scss */
-.comment-meta a:active, .comment-meta a:hover, .reply a:hover, a.comment-edit-link:hover { color: #ff4b33; }
-
-/* line 123, css/_comments.scss */
-#respond p, #comments-list ul #respond { margin: 0; }
-
-/*# sourceMappingURL=style.css.map */
+.aligncenter {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+img.alignleft {
+  padding-right: 5px;
+}
+
+img.alignright {
+  padding-left: 5px;
+}
+
+.clear {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+body {
+  color: #333333;
+  font-family: "Arvo", serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Oswald", sans-serif;
+  margin: 30.8px 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+p {
+  line-height: 35.2px;
+  margin: 30.8px 0;
+  font-size: 13.2px;
+}
+
+small {
+  font-size: 11px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: #6ac9cd;
+  text-decoration: none;
+}
+a:hover {
+  color: #0e292a;
+}
+
+header nav {
+  width: 100%;
+  padding: 5px 10px;
+  background: #3a3736;
+  color: #efefef;
+}
+
+form .form-element {
+  margin: 15px 0;
+}
+form .form-element label {
+  display: block;
+  margin-bottom: 8.8px;
+  font-weight: 400;
+  font-size: 17.6px;
+}
+form .form-element input {
+  width: 100%;
+  padding: 10px;
+}
+form .form-element .radio {
+  width: 100%;
+}
+form .form-element .radio label {
+  display: inline-block;
+}
+form .form-element .radio label input[type="radio"] {
+  width: auto;
+}
+
+button.button-default {
+  padding: 10px 25px;
+  background: #6ac9cd;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 17.6px;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+button.button-default:hover {
+  background: #44bbc0;
+}
+
+button.button-success {
+  padding: 10px 25px;
+  background: #f36c36;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 17.6px;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+button.button-success:hover {
+  background: #e84c0e;
+}
+
+button.button-error {
+  padding: 10px 25px;
+  background: #c1272d;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 17.6px;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+button.button-error:hover {
+  background: #971e23;
+}
+
+.third {
+  width: 33.33%;
+  padding: 2%;
+  float: left;
+}
+
+.half {
+  width: 50%;
+  padding: 2%;
+  float: left;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* =============================================================================
+                   Header, Sidebar and Footer
+   ========================================================================== */
+header {
+  background-image: url("img/bike.jpg");
+  height: 500px;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+.sidebar {
+  display: inline;
+  float: left;
+  width: 22.91667%;
+  margin: 0 1.04167%;
+  float: left;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+footer {
+  clear: both;
+  background: #FFF;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* =============================================================================
+                   Navigation and Content
+   ========================================================================== */
+#nav {
+  position: absolute;
+  top: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+ul.menu {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  float: right;
+}
+
+ul.menu li {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+ul.menu li a {
+  padding: 10px;
+  color: #eee;
+}
+
+ul.menu li a:hover {
+  color: #6ac9cd;
+}
+
+.content {
+  display: inline;
+  float: left;
+  width: 72.91667%;
+  margin: 0 1.04167%;
+  float: left;
+}
+
+/* =============================================================================
+                   Comment Styling
+   ========================================================================== */
+#comments .navigation {
+  padding: 0 0 18px;
+}
+
+h3#comments-title, h3#reply-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+h3#comments-title {
+  padding: 24px 0;
+}
+
+.commentlist li.comment {
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 24px;
+  position: relative;
+  clear: both;
+  margin: 0 0 24px;
+  padding: 0 0 0 56px;
+}
+
+.commentlist li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+#comments .comment-body ul, #comments .comment-body ol {
+  margin-bottom: 18px;
+}
+
+#comments .comment-body p:last-child {
+  margin-bottom: 6px;
+}
+
+#comments .comment-body blockquote p:last-child {
+  margin-bottom: 24px;
+}
+
+.commentlist ol {
+  list-style: decimal;
+}
+
+.commentlist .avatar {
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.comment-author cite {
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.comment-author .says {
+  font-style: italic;
+}
+
+.comment-meta {
+  font-size: 12px;
+  margin: 0 0 5px;
+}
+
+.comment-meta a:link, .comment-meta a:visited {
+  color: #888888;
+  text-decoration: none;
+}
+
+.reply {
+  font-size: 12px;
+  padding: 0 0 24px;
+}
+
+.reply a, a.comment-edit-link {
+  color: #888888;
+}
+
+.commentlist .children li {
+  border: none;
+  margin: 0;
+}
+
+#comments .pingback {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.commentlist li.comment + li.pingback {
+  margin-top: -6px;
+}
+
+#comments .pingback p {
+  color: #888888;
+  font-size: 12px;
+  line-height: 18px;
+  display: block;
+  margin: 0;
+}
+
+#comments .pingback .url {
+  font-style: italic;
+  font-size: 13px;
+}
+
+input[type=submit] {
+  color: #333333;
+}
+
+#respond {
+  margin-top: 24px;
+  border-top: 1px solid #e7e7e7;
+  overflow: hidden;
+  position: relative;
+}
+
+#respond .comment-notes {
+  margin-bottom: 1em;
+}
+
+.form-allowed-tags {
+  line-height: 1em;
+}
+
+.children #respond {
+  margin: 0 48px 0 0;
+}
+
+h3#reply-title {
+  margin: 18px 0;
+}
+
+#comments-list #respond {
+  margin: 0 0 18px;
+}
+
+#cancel-comment-reply-link {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+#respond .required {
+  color: #ff4b33;
+  font-weight: 700;
+}
+
+#respond label {
+  color: #888888;
+  font-size: 12px;
+}
+
+#respond input {
+  width: 98%;
+  margin: 0 0 9px;
+}
+
+#respond textarea {
+  width: 98%;
+}
+
+#respond dt, #respond dd {
+  color: #888888;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#respond dd code {
+  font-size: 11px;
+}
+
+#respond .form-submit {
+  margin: 0 0 24px;
+}
+
+#respond .form-submit input {
+  width: auto;
+  font-size: 14px;
+}
+
+#respond dl {
+  margin: 0 0 10px;
+}
+
+#respond dt {
+  display: inline;
+  font-weight: 400;
+}
+
+#respond dd {
+  display: inline;
+}
+
+p.form-allowed-tags, .nocomments {
+  display: none;
+}
+
+.commentlist, .commentlist .children {
+  list-style: none;
+  margin: 0;
+}
+
+.comment-meta a:active, .comment-meta a:hover, .reply a:hover, a.comment-edit-link:hover {
+  color: #ff4b33;
+}
+
+#respond p, #comments-list ul #respond {
+  margin: 0;
+}
+
+/* =============================================================================
+                   Images
+   ========================================================================== */
+img.navlogo {
+  width: 15%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 1000;
+}
