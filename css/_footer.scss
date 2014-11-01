@@ -1,8 +1,33 @@
-footer {
-  clear:both;
-  background: #FFF;
+footer.fullfooter{
+  clear: both;
+  background: #333;
+  height: 250px;
 }
 
 footer p {
+	font-family: 'Oswald', Helvetica, sans-serif;
+	letter-spacing: 2px;
 	margin: 0;
+	padding-top: 7%;
+	color: #eee;
+	float: right;
+}
+
+.footercontainer {
+	padding-right: 5%;
+	padding-left: 8%; 
+	background: #333;
+}
+
+.socialicons {
+	padding-top: 5%;
+	float: left;
+	width: 20%;
+
+}
+
+.facebookicon, .twittericon, .instagramicon {
+	width: 33.3%;
+	padding: 15px;
+	float: left;
 }

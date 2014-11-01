@@ -1,7 +1,20 @@
-<footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?>CHANGE</p>
-  </div>
+<footer class="fullfooter">
+  <div class="footercontainer">
+      	<div class="socialicons">
+      		<div class="facebookicon">
+				<a href="#" target="new"><img src="wp-content/themes/velo/img/facebook.png" alt="facebook"></a>
+    	  	</div> <!-- /.facebookicon -->
+
+    	  	<div class="twittericon">
+    			<a href="#" target="new"><img src="wp-content/themes/velo/img/twitter.png" alt="twitter"></a>
+    	  	</div> <!-- /.twittericon -->
+
+    		<div class="instagramicon">
+    			<a href="#" target="new"><img src="wp-content/themes/velo/img/instagram.png" alt="instagram"></a>
+    		</div> <!-- /.instagramicon -->
+      	</div> <!-- /.socialicons -->
+      	<p>&copy; <a href="http://www.emiliadallman.com/" target="new">Emilia Dallman</a> and <a href="http://www.phrichards.ca/" target="new">Phil Richards</a><?php echo date('Y'); ?></p>
+  </div> <!-- /.footercontainer -->
 </footer>
 
 <script>
