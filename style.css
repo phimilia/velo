@@ -236,10 +236,36 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 5px;
 }
 
+a.copyright {
+  color: #eee;
+}
+a.copyright:hover {
+  color: #a2a2a2;
+}
+
+h2 > a, h2.blogtitle {
+  color: #222;
+  padding-top: 10%;
+  margin-bottom: 0;
+  margin-right: 15%;
+  margin-left: 10%;
+}
+
+h1, h2, h3, h4, h5 > a {
+  font-family: "Oswald", sans-serif;
+  color: #222;
+  text-transform: none;
+  margin: 30.8px 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
 p {
   line-height: 35.2px;
   margin: 30.8px 0;
   font-size: 13.2px;
+  padding-right: 15%;
+  padding-left: 10%;
 }
 
 small {
@@ -248,6 +274,16 @@ small {
 
 strong {
   font-weight: 600;
+}
+
+li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15.4px;
+  line-height: 2;
+}
+li a:hover {
+  color: #0e292a;
 }
 
 a {
@@ -300,6 +336,21 @@ button.button-default {
   letter-spacing: 2px;
 }
 button.button-default:hover {
+  background: #44bbc0;
+}
+
+input.searchsubmit {
+  padding: 10px 25px;
+  background: #6ac9cd;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 17.6px;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+input.searchsubmit:hover {
   background: #44bbc0;
 }
 
@@ -358,12 +409,30 @@ button.button-error:hover {
                    Header, Sidebar and Footer
    ========================================================================== */
 header {
-  background-image: url("img/bike.jpg");
   height: 500px;
+  margin-top: 0;
 }
 
 header h1 {
   margin-top: 0;
+}
+
+.video-js .vjs-tech {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  position: absolute;
+  z-index: 0;
+  background: url(mel.jpg) no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .sidebar {
@@ -383,13 +452,37 @@ header h1 {
   list-style: none;
 }
 
-footer {
+footer.fullfooter {
   clear: both;
-  background: #FFF;
+  background: #333;
+  height: 250px;
 }
 
 footer p {
+  font-family: 'Oswald', Helvetica, sans-serif;
+  letter-spacing: 2px;
   margin: 0;
+  padding-top: 7%;
+  color: #eee;
+  float: right;
+}
+
+.footercontainer {
+  padding-right: 5%;
+  padding-left: 8%;
+  background: #333;
+}
+
+.socialicons {
+  padding-top: 5%;
+  float: left;
+  width: 20%;
+}
+
+.facebookicon, .twittericon, .instagramicon {
+  width: 33.3%;
+  padding: 15px;
+  float: left;
 }
 
 /* =============================================================================
@@ -397,14 +490,14 @@ footer p {
    ========================================================================== */
 #nav {
   position: absolute;
-  top: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  background: #333;
 }
 
 ul.menu {
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   float: right;
 }
 
@@ -413,7 +506,7 @@ ul.menu li {
   margin-right: 10px;
   font-family: 'Oswald', Helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 4px;
 }
 
@@ -432,6 +525,14 @@ ul.menu li a:hover {
   width: 72.91667%;
   margin: 0 1.04167%;
   float: left;
+}
+
+/* =============================================================================
+                   Widgets
+   ========================================================================== */
+h3.widget-title {
+  margin-bottom: 10px;
+  margin-top: 40px;
 }
 
 /* =============================================================================
@@ -654,9 +755,37 @@ p.form-allowed-tags, .nocomments {
                    Images
    ========================================================================== */
 img.navlogo {
-  width: 15%;
+  width: 13%;
+  height: auto;
   position: absolute;
-  top: 0;
-  left: 10px;
+  top: 3%;
+  bottom: 3%;
+  left: 25px;
   z-index: 1000;
+}
+
+/* =============================================================================
+                   Shop
+   ========================================================================== */
+/* =============================================================================
+                   Forms
+   ========================================================================== */
+.searchbar {
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+
+input.searchinput {
+  display: block;
+  padding: 10px;
+  margin-bottom: 8.8px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+input.searchsubmit {
+  margin-top: 5px;
+  font-weight: 400;
+  color: #fff;
+  font-size: 17.6px;
 }

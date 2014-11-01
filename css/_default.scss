@@ -27,10 +27,39 @@ h1,h2,h3,h4,h5 {
   letter-spacing: 5px;
 }
 
+a.copyright {
+  color: #eee;
+
+  &:hover {
+    color: darken(#eee, 30%);
+  }
+}
+
+h2 > a, h2.blogtitle {
+  color: #222;
+  padding-top: 10%;
+  margin-bottom: 0;
+  margin-right: 15%;
+  margin-left: 10%; 
+}
+
+
+
+h1,h2,h3,h4,h5 > a {
+  font-family: $headingsFont;
+  color: #222;
+  text-transform: none;
+  margin: $fontSize*1.4 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
 p {
   line-height: $fontSize*1.6;
   margin: $fontSize*1.4 0;
   font-size: $fontSize*0.6;
+  padding-right: 15%;
+  padding-left: 10%;
 }
 
 small {
@@ -39,6 +68,17 @@ small {
 
 strong {
   font-weight: 600;
+}
+
+li a {
+  color: #333;
+  text-decoration: none;
+  font-size: $fontSize*0.7;
+  line-height: 2;
+
+  &:hover {
+    color: darken($primaryColour, 50%);
+  }
 }
 
 a {
@@ -97,6 +137,10 @@ form {
 }
 
 button.button-default {
+  @include button($primaryColour);
+}
+
+input.searchsubmit {
   @include button($primaryColour);
 }
 

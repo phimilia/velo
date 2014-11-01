@@ -1,0 +1,22 @@
+.searchbar {
+	margin-top: 31px;
+	margin-bottom: 31px;
+}
+
+input.searchinput {
+	display:block;
+	padding: 10px;
+	margin-bottom: $fontSize * 0.4;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+input.searchsubmit {
+	margin-top: 5px;
+	font-weight: 400;
+	color: #fff;
+	font-size: $fontSize * 0.8;
+
+}
+
+
