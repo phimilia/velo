@@ -266,3 +266,5 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+if( ! isset( $content_width ) ) $content_width = 1600;
