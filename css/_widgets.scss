@@ -2,3 +2,20 @@ h3.widget-title {
 	margin-bottom: 10px;
 	margin-top: 40px;
 }
+
+th {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+td.business_hours_table_day, td.business_hours_table_open, td.business_hours_table_close {
+	font-size: 18px;
+	text-align: center;
+}
+
+.business_working_hours_title {
+	font-size: 16px;
+}
+
+.working_hours_closed, .working_hours_open, .working_hours_close {
+	font-size: 16px;
+}
