@@ -268,3 +268,8 @@ function get_post_parent($post) {
 }
 
 if( ! isset( $content_width ) ) $content_width = 1800;
+
+add_action( 'init', 'jk_remove_wc_breadcrumbs' );
+function jk_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}

@@ -3,19 +3,27 @@ h3.widget-title {
 	margin-top: 40px;
 }
 
-th {
+.sidebar th {
 	font-size: 18px;
 	text-transform: uppercase;
+	padding-top: 20px;
+	text-align: left;
 }
-td.business_hours_table_day, td.business_hours_table_open, td.business_hours_table_close {
+.sidebar td.business_hours_table_day, .sidebar td.business_hours_table_open, .sidebar td.business_hours_table_close {
+	font-size: 18px;
+}
+
+.sidebar .working_hours_title {
 	font-size: 18px;
 	text-align: center;
 }
 
-.business_working_hours_title {
-	font-size: 16px;
+.sidebar span.working_hours_closed, .sidebar span.working_hours_open, .sidebar span.working_hours_close {
+	font-size: 18px;
+	text-align: center;
 }
 
-.working_hours_closed, .working_hours_open, .working_hours_close {
-	font-size: 16px;
+.sidebar span.working_hours_open {
+	margin-left: 35%;
 }
+
