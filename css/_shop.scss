@@ -5,14 +5,10 @@ ul.products li {
 	margin-left: 3%;
 }
 
-h3 {
-	text-align: center;
+ul.products li h3 {
+	padding-left: 24%;
 }
 
 h3 mark.count {
 	background-color: transparent;
-}
-
-#container > div.content > nav.woocommerce-breadcrumb + div.sidebar {
-	display: none;
 }
