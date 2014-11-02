@@ -14,7 +14,7 @@
     			<a href="#" target="new"><img src="<?php echo get_template_directory_uri() . '/img/instagram.png' ?>"  alt="instagram"></a>
     		</div> <!-- /.instagramicon -->
       	</div> <!-- /.socialicons -->
-      	<p>&copy; <?php echo date('Y'); ?> <a class="copyright" href="http://www.emiliadallman.com/" target="new">Emilia Dallman</a> and <a class="copyright" href="http://www.phrichards.ca/" target="new">Phil Richards </a></p>
+      	<p class="customfooter">&copy; <?php echo date('Y'); ?> <a class="copyright" href="http://www.emiliadallman.com/" target="new">Emilia Dallman</a> and <a class="copyright" href="http://www.phrichards.ca/" target="new">Phil Richards </a></p>
   </div> <!-- /.footercontainer -->
 </footer>
 
