@@ -1,9 +1,18 @@
 ul.products li {
 	float: left;
 	list-style-type: none;
-	width: 33%;
+	width: 25%;
+	margin-left: 5%;
+}
+
+h3 {
+	text-align: center;
 }
 
 h3 mark.count {
 	background-color: transparent;
+}
+
+#container > div.content > nav.woocommerce-breadcrumb + div.sidebar {
+	display: none;
 }
