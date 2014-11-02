@@ -1,7 +1,7 @@
 footer.fullfooter{
   clear: both;
   background: #333;
-  height: 175px;
+  height: 130px;
   
 }
 
@@ -9,8 +9,9 @@ footer.fullfooter{
 	font-family: 'Oswald', Helvetica, sans-serif;
 	font-size: 14px;
 	letter-spacing: 3px;
+	line-height: 1.5;
 	margin: 0;
-	padding-top: 7%;
+	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-right: 7%;
 	color: #eee;
@@ -26,14 +27,48 @@ footer.fullfooter{
 }
 
 .socialicons {
-	padding-top: 5%;
+	padding-top: 2.5%;
 	float: left;
 	width: 17%;
-
 }
 
 .facebookicon, .twittericon, .instagramicon {
 	width: 33.3%;
-	padding: 10px;
+	padding: 5%;
 	float: left;
+}
+
+.copyrightcontainer {
+	width: 75%;
+	float: right;
+}
+
+@media (max-width: 1000px) {
+	footer.fullfooter {
+		height: 120px;
+	}
+}
+@media (max-width: 940px) {
+	footer.fullfooter {
+		height: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	footer.fullfooter {
+		height: 85px;
+	}
+
+	.customfooter {
+		font-size: 12px;
+	}
+
+
+
+}
+
+@media (max-width: 480px) {
+	.customfooter {
+		font-size: 11px;
+	}
 }
