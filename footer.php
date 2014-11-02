@@ -13,7 +13,7 @@
     			<a href="#" target="new"><img src="wp-content/themes/velo/img/instagram.png" alt="instagram"></a>
     		</div> <!-- /.instagramicon -->
       	</div> <!-- /.socialicons -->
-      	<p>&copy; <a href="http://www.emiliadallman.com/" target="new">Emilia Dallman</a> and <a href="http://www.phrichards.ca/" target="new">Phil Richards</a><?php echo date('Y'); ?></p>
+      	<p>&copy; <?php echo date('Y'); ?> <a class="copyright" href="http://www.emiliadallman.com/" target="new">Emilia Dallman</a> and <a class="copyright" href="http://www.phrichards.ca/" target="new">Phil Richards </a></p>
   </div> <!-- /.footercontainer -->
 </footer>
 

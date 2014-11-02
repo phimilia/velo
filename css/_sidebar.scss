@@ -1,6 +1,7 @@
 .sidebar {
   @include column(3);
   float:left;
+  padding-bottom: 8%;
 }
   .sidebar ul {
     margin:0;
