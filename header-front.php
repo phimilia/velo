@@ -15,11 +15,11 @@
 <header class="homeheader">
   <div class="container clearfix">
     <?php echo do_shortcode('[videojs mp4="wp-content/themes/velo/img/bikevideo.mp4" preload="auto" autoplay="true" loop="true" controls="false" muted="true" width="1400" height="500"]'); ?>
-    <h1>
+    <div class="logocontainer clearfix">
       <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> 
-        <img class="navlogo" src="wp-content/themes/velo/img/VELO.png" alt="<?php bloginfo( 'name' ); ?>">
+      <img class="navlogo" src="wp-content/themes/velo/img/VELO.png" alt="<?php bloginfo( 'name' ); ?>">
       </a>
-    </h1>
+    </div> <!-- /.logocontainer -->
 
     <?php wp_nav_menu( array(
       'container' => 'nav',

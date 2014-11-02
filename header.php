@@ -14,11 +14,11 @@
 
 <header class="goawayheader">
   <div class="container clearfix">
-    <h1>
+    <div class="logocontainer clearfix">
       <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> 
-      <img class="navlogo" src="<?php echo get_template_directory_uri() . '/img/VELO.png' ?>"  alt="VELO">
+      <img class="navlogo" src="wp-content/themes/velo/img/VELO.png" alt="<?php bloginfo( 'name' ); ?>">
       </a>
-    </h1>
+    </div> <!-- /.logocontainer -->
 
     <?php wp_nav_menu( array(
       'container' => 'nav',
