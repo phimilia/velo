@@ -5,9 +5,9 @@
 */
 
 get_header();  ?>
-
 <div class="main">
   <div class="container">
+  <p>this is page full</p>
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
