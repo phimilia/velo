@@ -39,8 +39,8 @@ h2 > a {
   color: #222;
   padding-top: 10%;
   margin-bottom: 0;
-  margin-right: 15%;
-  margin-left: 10%; 
+  // margin-right: 15%;
+  // margin-left: 10%; 
 }
 
 h2.blogtitle {
@@ -48,8 +48,13 @@ h2.blogtitle {
   padding-top: 10px;
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 15%;
-  margin-left: 10%; 
+}
+
+h1.category {
+  padding-bottom: 2%;
+  border-bottom-style: double;
+  border-bottom-color: #555;
+
 }
 
 
@@ -66,8 +71,6 @@ p {
   line-height: $fontSize*1.6;
   margin: $fontSize*1.4 0;
   font-size: $fontSize*0.6;
-  padding-right: 15%;
-  padding-left: 10%;
 }
 
 small {
