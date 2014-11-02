@@ -1,15 +1,20 @@
 footer.fullfooter{
   clear: both;
   background: #333;
-  height: 250px;
+  height: 175px;
 }
 
 footer p {
 	font-family: 'Oswald', Helvetica, sans-serif;
-	letter-spacing: 2px;
+	font-size: 14px;
+	letter-spacing: 3px;
 	margin: 0;
 	padding-top: 7%;
+	padding-bottom: 5%;
+	padding-right: 7%;
 	color: #eee;
+	text-transform: uppercase;
+	text-align: right;
 	float: right;
 }
 
@@ -28,6 +33,6 @@ footer p {
 
 .facebookicon, .twittericon, .instagramicon {
 	width: 33.3%;
-	padding: 15px;
+	padding: 10px;
 	float: left;
 }
