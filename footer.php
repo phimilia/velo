@@ -2,15 +2,16 @@
   <div class="footercontainer">
       	<div class="socialicons">
       		<div class="facebookicon">
-				<a href="#" target="new"><img src="wp-content/themes/velo/img/facebook.png" alt="facebook"></a>
+				<a href="#" target="new"><img src="<?php echo get_template_directory_uri() . '/img/facebook.png' ?>"  alt="facebook"></a>
     	  	</div> <!-- /.facebookicon -->
 
     	  	<div class="twittericon">
-    			<a href="#" target="new"><img src="wp-content/themes/velo/img/twitter.png" alt="twitter"></a>
+    			<a href="#" target="new"><img src="<?php echo get_template_directory_uri() . '/img/twitter.png' ?>"  alt="twitter">
+    			</a>
     	  	</div> <!-- /.twittericon -->
 
     		<div class="instagramicon">
-    			<a href="#" target="new"><img src="wp-content/themes/velo/img/instagram.png" alt="instagram"></a>
+    			<a href="#" target="new"><img src="<?php echo get_template_directory_uri() . '/img/instagram.png' ?>"  alt="instagram"></a>
     		</div> <!-- /.instagramicon -->
       	</div> <!-- /.socialicons -->
       	<p>&copy; <?php echo date('Y'); ?> <a class="copyright" href="http://www.emiliadallman.com/" target="new">Emilia Dallman</a> and <a class="copyright" href="http://www.phrichards.ca/" target="new">Phil Richards </a></p>

@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 </head>
 
-<header>
+<header class="homeheader">
   <div class="container clearfix">
     <?php echo do_shortcode('[videojs mp4="wp-content/themes/velo/img/bikevideo.mp4" preload="auto" autoplay="true" loop="true" controls="false" muted="true" width="1400" height="500"]'); ?>
     <h1>

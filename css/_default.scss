@@ -35,7 +35,7 @@ a.copyright {
   }
 }
 
-h2 > a, h2.blogtitle {
+h2 > a {
   color: #222;
   padding-top: 10%;
   margin-bottom: 0;
@@ -43,6 +43,14 @@ h2 > a, h2.blogtitle {
   margin-left: 10%; 
 }
 
+h2.blogtitle {
+  color: #222;
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 15%;
+  margin-left: 10%; 
+}
 
 
 h1,h2,h3,h4,h5 > a {

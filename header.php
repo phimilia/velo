@@ -12,7 +12,7 @@
   <?php wp_head(); ?>
 </head>
 
-<header>
+<header class="goawayheader">
   <div class="container clearfix">
     <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> 
