@@ -267,4 +267,4 @@ function get_post_parent($post) {
 	}
 }
 
-if( ! isset( $content_width ) ) $content_width = 1600;
+if( ! isset( $content_width ) ) $content_width = 1800;
