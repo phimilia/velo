@@ -2,6 +2,10 @@
   @include column(3);
   float:left;
   padding-bottom: 8%;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
   .sidebar ul {
     margin:0;

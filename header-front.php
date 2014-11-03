@@ -21,6 +21,11 @@
       </a>
     </div> <!-- /.logocontainer -->
 
+    <div class="biglogocontainer clearfix">
+      <img class="biglogo" src="<?php echo get_template_directory_uri() . '/img/VELO-white.png' ?>"  alt="VELO">
+      </a>
+    </div> <!-- /.logocontainer -->
+
     <?php wp_nav_menu( array(
       'container' => 'nav',
       'container_id' => 'nav',

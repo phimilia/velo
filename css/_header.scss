@@ -19,7 +19,6 @@ header.goawayheader {
 
 header h1 {
 	margin-top: 0;
-
 }
 
 .video-js .vjs-tech {
@@ -32,6 +31,13 @@ header h1 {
 	min-height: 100%;
 	width: 103%	;
 	height: auto;
+}
+
+.biglogocontainer {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 40%;
 }
 
 .shop h1 {
