@@ -9,17 +9,17 @@ form.searchform {
 
 input.searchinput {
 	display:block;
+	float: left;
 	padding: 10px;
-	margin-bottom: $fontSize * 0.4;
 	font-weight: 400;
 	font-size: 14px;
 }
 
 input.searchsubmit {
-	margin-top: 5px;
+	margin-left: 2%;
 	font-weight: 400;
 	color: #fff;
-	font-size: $fontSize * 0.8;
+	font-size: $fontSize * 0.6;
 
 }
 

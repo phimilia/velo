@@ -17,7 +17,7 @@
     <?php echo do_shortcode('[videojs mp4="wp-content/themes/velo/img/bikevideo.mp4" preload="auto" autoplay="true" loop="true" controls="false" muted="true" width="1400" height="500" id="header-video"]'); ?>
     <div class="logocontainer clearfix">
       <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> 
-      <img class="navlogo" src="wp-content/themes/velo/img/VELO.png" alt="<?php bloginfo( 'name' ); ?>">
+      <img class="navlogo" src="<?php echo get_template_directory_uri() . '/img/VELO.png' ?>"  alt="VELO">
       </a>
     </div> <!-- /.logocontainer -->
 
