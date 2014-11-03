@@ -3,10 +3,23 @@ ul.products li {
 	list-style-type: none;
 	width: 30%;
 	margin-left: 3%;
+
+	@media (max-width: 800px) {
+		width: 50%;
+		margin-left: 0;
+	}
+
+	@media (max-width: 600px) {
+		width: 100%;
+	}
 }
 
 ul.products li h3 {
 	padding-left: 24%;
+
+	@media (max-width: 600px) {
+		padding-left: 15%;
+	}
 }
 
 h3 mark.count {
