@@ -9,6 +9,8 @@
 		});
 	}); 
 
-	
+	$('.wonderplugin-gridgallery-item').on('hover', function(){
+		$(this).css('border', '1px solid red');
+	});
 	
 }); // end doc ready
