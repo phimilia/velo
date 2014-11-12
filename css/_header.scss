@@ -3,7 +3,7 @@ header.homeheader {
 	margin-top: 0;
 
 	@media (max-width: 800px) {
-		background-image: url('img/header-photo.png');
+		background-image: url('img/headerphoto.png');
 	}
 }
 
@@ -38,6 +38,41 @@ header h1 {
   top: 10%;
   left: 10%;
   width: 40%;
+
+  @media (max-width: 1024px) {
+  	width: 50%;
+  	left: 0;
+  }
+
+  @media (max-width: 768px) {
+  	top: 10%;
+  }
+
+  @media (max-width: 640px) {
+  	top: 15%;
+  	left: -10%;
+  	width: 60%;
+  }
+
+  @media (max-width: 480px) {
+  	width: 70%;
+  	left: -20%;
+  }
+
+  @media (max-width: 414px) {
+  	width: 90%;
+  	left: -40%;
+  }
+
+  @media (max-width: 375px) {
+  	top: 20%;
+  }
+
+  @media (max-width: 320px) {
+  	width: 100%;
+  	left: -50%;
+  	top: 25%;
+  }
 }
 
 .shop h1 {
