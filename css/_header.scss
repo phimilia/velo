@@ -79,4 +79,16 @@ header h1 {
 	padding-left: 6%;
 	font-size: 33px;
 	margin-top: 0;
+
+  @media (max-width: 640px) {
+    padding-left: 20%;
+  }
+
+  @media (max-width: 480px) {
+    padding-left: 13%;
+  }
+
+  @media (max-width: 414px) {
+    padding-left: 10%;
+  }
 }

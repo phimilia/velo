@@ -10,6 +10,18 @@
 	padding-right: 10%;
 	padding-left: 5%;
 	padding-bottom: 100px;
+
+	@media (max-width: 768px) {
+		@include column(12);
+	}
+}
+
+.content p {
+	width: 100%;
+}
+
+.content p iframe {
+	width: 100%;
 }
 
 .container article h2 {

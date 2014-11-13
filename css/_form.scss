@@ -21,6 +21,16 @@ input.searchsubmit {
 	color: #fff;
 	font-size: $fontSize * 0.6;
 
+	@media (max-width: 1224px) {
+		margin-left: 0;
+		width: 64%;
+		margin-top: 10px;
+	}
+
+	@media (max-width: 1024px) {
+		width: 75%;
+	}
+
 }
 
 
