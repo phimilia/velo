@@ -17,6 +17,11 @@ h3.widget-title {
 .sidebar .working_hours_title {
 	font-size: 18px;
 	text-align: center;
+
+	@media (max-width: 1024px) {
+		text-align: left;
+		margin-bottom: 10px;
+	}
 }
 
 .sidebar span.working_hours_closed, .sidebar span.working_hours_open, .sidebar span.working_hours_close {
@@ -26,5 +31,9 @@ h3.widget-title {
 
 .sidebar span.working_hours_open {
 	margin-left: 35%;
+
+	@media (max-width: 1024px) {
+		margin-left: 0;
+	}
 }
 
